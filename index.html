@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-wrapper" class="shadow-4">
+        <h1 class="header">Calorie Calculator</h1>
+        <form>
+
+            <input type="text" class="age" placeholder="AGE">
+            <div class="gender">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" class="male" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" class="female" id="female">
+            </div>
+            <div class="height">
+                <label for="height">Height</label>
+                <input type="text" class="feet"placeholder="FEET" id="height">
+                <input type="text" class="inches"placeholder="INCHES" id="height">
+            </div>
+            <input type="text" name="weight" class="weight" placeholder="WEIGHT">
+            <button class="calc">Calculate</button>
+        </form>
+        
+            <ul class="results">
+                <li>Maintain weight -</li>
+                <li>Mild weight loss -</li>
+                <li>Weight loss -</li>
+                <li>Extreme weight loss -</li>
+                <li><button class="back">Back</button></li>
+            </ul>
+        
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

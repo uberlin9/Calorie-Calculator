@@ -1,0 +1,123 @@
+:root{
+    --underline-color:#949494;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-image: linear-gradient(150deg,#4adede,#1ca7ec);
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+.header{
+margin-bottom: 30px;
+text-transform:uppercase;
+font-size: 30px;
+background: -webkit-linear-gradient(150deg,#1ca7ec,#4adede);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-wrapper{
+    position: absolute;
+    height: 450px;
+    width: 350px;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto; 
+    background-color: white;   
+    border-radius: 10px;
+    padding: 40px;
+    padding-top: 60px;
+    overflow: hidden;
+    
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+form > * {
+    width: 200px;
+    margin-bottom: 20px;
+    color: var(--underline-color)
+}
+::placeholder{
+    color: var(--underline-color)
+
+}
+
+.height{
+    display: flex;
+}
+.height > input{
+width: 66px;
+margin-left: 10px;
+border: 0;
+ border-bottom: 1px solid ;
+ border-color: var(--underline-color);
+ color: var(--underline-color);
+}
+.height > input:focus{
+    color: var(--underline-color);
+}
+.age, .weight{
+    border: 0;
+    border-bottom: 1px solid ;
+}
+
+.calc, .back{
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    cursor: pointer;
+    color: #50c9c3;
+    border-color:#50c9c3;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+
+   margin-top: 40px;
+}
+
+.calc:hover{
+    color: white;
+    background-image:linear-gradient(150deg,#4adede,#1ca7ec) ;
+}
+.results{
+    list-style: none;
+   
+}
+.results li {
+    opacity: 0;
+}
+
+.back:hover{
+    color: white;
+    background-image: linear-gradient(150deg,#4adede,#1ca7ec) ;
+}
+.submit-form{ 
+    display: none;
+}
+
+@keyframes resultFade{
+    from{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
