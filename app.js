@@ -40,10 +40,10 @@ let bmr = (10 * w) + (6.25 * h) - (5 * a)
 
     console.log(Math.floor(bmr))
 //results
-results[0].innerHTML = `Maintain weight - ${Math.floor(bmr)} calories `
-results[1].innerHTML = `Mild weight loss - ${Math.floor(bmr * 0.89)} calories`
-results[2].innerHTML = `Weight loss - ${Math.floor(bmr * 0.78)} calories `
-results[3].innerHTML = `Extreme weight loss - ${Math.floor(bmr * 0.56)} calories `
+results[0].innerHTML = `Maintain weight - ${Math.floor(bmr)} calories/day `
+results[1].innerHTML = `Mild weight loss - ${Math.floor(bmr * 0.89)} calories/day <p>0.5lb/week</p>`
+results[2].innerHTML = `Weight loss - ${Math.floor(bmr * 0.78)} calories/day <p>1lb/week</p>`
+results[3].innerHTML = `Extreme weight loss - ${Math.floor(bmr * 0.56)} calories/day <p>2lbs/week</p> `
 
 results.forEach((item,index) =>{
 

@@ -101,7 +101,10 @@ border: 0;
 }
 .results li {
     opacity: 0;
+    font-size: 15px;
+    
 }
+
 
 .back:hover{
     color: white;
@@ -120,4 +123,9 @@ border: 0;
         opacity: 1;
         transform: translate(0px);
     }
+}
+
+p{
+    font-size: small;
+    color: #949494;
 }
